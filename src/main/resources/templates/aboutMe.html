@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .about-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 40px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .profile-heading {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+        .skills-list li {
+            margin: 8px 0;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+<div th:fragment="aboutMe">
+    <div class="container about-container">
+        <h2 class="text-center profile-heading">Welcome to My Portfolio</h2>
+        <p class="text-center"><strong>Hi, I’m Anurag Ghosliya</strong>, a passionate Java developer and web developer with expertise in <strong>Spring Boot, JSP, Servlets, and cybersecurity</strong>. I specialize in creating <strong>efficient and secure applications</strong> with a strong foundation in computer networking.</p>
+
+        <hr>
+
+        <h4 class="text-primary">My Skills</h4>
+        <ul class="skills-list">
+            <li>🖥️ <strong>Programming:</strong> Java, Python, JavaScript (basic)</li>
+            <li>🌐 <strong>Web Development:</strong> Spring Boot, JSP, Servlets, Hibernate, JDBC, MySQL</li>
+            <li>🔐 <strong>Cybersecurity & Networking:</strong> pfSense firewall, network configuration, Computer Networking</li>
+            <li>⚙️ <strong>Tools:</strong> IntelliJ IDEA, Eclipse, VSCode</li>
+        </ul>
+
+        <hr>
+
+        <h4 class="text-primary">My Work</h4>
+        <ul class="skills-list">
+            <li>📂 A **file transfer system** for print shops using QR codes</li>
+            <li>🔄 A **multithreaded web server** using Java thread pool</li>
+            <li>🛠️ A **service marketplace platform** connecting local workers with customers</li>
+            <li>🌍 A **portfolio website** to showcase my work and projects</li>
+        </ul>
+
+        <hr>
+
+        <p class="text-center"><strong>📩 Let’s Connect:</strong> <a href="mailto:jatanurag000@gmail.com">jatanurag000@gmail.com</a></p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+  <!-- Projects Section-->
+  <div th:fragment="projects">
+  <section class="py-5" >
+    <div class="container px-5 mb-5">
+      <div class="text-center mb-5">
+        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+      </div>
+      <div class="row gx-5 justify-content-center">
+        <div class="col-lg-11 col-xl-9 col-xxl-8">
+          <!-- Project Card 1-->
+          <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+            <div class="card-body p-0">
+              <div class="d-flex align-items-center">
+                <div class="p-5">
+                  <h2 class="fw-bolder">
+                    File Upload System
+                  <a th:href="${FileUploadSystem}" target="_blank">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  </h2>
+                  <p>The Printshop App is a Java-based application designed to simplify the file upload and download process for print shops. This project leverages Spring Boot and Hibernate to manage shop registrations and file transfers seamlessly. Users can upload files directly to a shop's designated directory by scanning a QR code provided by the shop. This eliminates the need for traditional methods like email or WhatsApp for file transfers.</p>
+                </div>
+                <img class="img-fluid" src="https://dummyimage.com/300x400/000/fff&text=FileUploadSystem" alt="..." />
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 2-->
+          <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+            <div class="card-body p-0">
+              <div class="d-flex align-items-center">
+                <div class="p-5">
+                  <h2 class="fw-bolder">User Management System
+                    <a th:href="${UserManagementSystem}" target="_blank">
+                      <i class = "bi bi-github"></i>
+                    </a>
+                  </h2>
+                  <p>This project is a web-based User Management System built using Java Servlets, JSP, and JDBC. It provides CRUD (Create, Read, Update, Delete) operations for managing user data efficiently. The system ensures data security by implementing AES-based encryption for storing and transmitting sensitive information.
+
+                    Additionally, the project follows MVC architecture for better maintainability and scalability. It includes user authentication, role-based access control, and session management to enhance security. The system is designed to be lightweight, fast, and easily deployable, making it a reliable solution for managing user records in small to medium-scale applications.</p>
+                </div>
+                <img class="img-fluid" src="https://dummyimage.com/300x400/000/fff&text=User Management System" alt="..." />
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+            <div class="card-body p-0">
+              <div class="d-flex align-items-center">
+                <div class="p-5">
+                  <h2 class="fw-bolder">Customer Relationship Management (CRM)
+                    <a th:href="${CRM}" target="_blank">
+                      <i class = "bi bi-github"></i>
+                    </a>
+                  </h2>
+                  <p>The Customer Relationship Management (CRM) System is a backend application built using Java Spring Boot, providing REST APIs for managing customer data. It enables businesses to streamline customer interactions, automate lead management, and integrate with client-facing applications. Designed for scalability and security, this CRM system is ideal for sales tracking, customer support, and business analytics.</p>
+                </div>
+                <img class="img-fluid" src="https://dummyimage.com/300x400/000/fff&text=Customer Relationship Management" alt="..." />
+              </div>
+            </div>
+          </div>
+
+          <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+            <div class="card-body p-0">
+              <div class="d-flex align-items-center">
+                <div class="p-5">
+                  <h2 class="fw-bolder" >MultiThreaded Web Server
+                    <a th:href="${MultiThreadedWebServer}" target="_blank">
+                      <i class = "bi bi-github"></i>
+                    </a>
+                  </h2>
+                  <p>This project is a custom-built multithreaded web server implemented in Java, utilizing a thread pool to efficiently handle multiple client requests concurrently. The server can manage multiple simultaneous connections without creating a new thread for each client, enhancing performance and scalability.</p>
+                </div>
+                <img class="img-fluid" src="https://dummyimage.com/300x400/000/fff&text=MultiThreaded Web Server" alt="..." />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Call to action section-->
+  <section class="py-5 bg-gradient-primary-to-secondary text-white">
+    <div class="container px-5 my-5">
+      <div class="text-center">
+        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" th:href="@{/contact}">Contact me</a>
+      </div>
+    </div>
+  </section>
+  </div>
+<!-- Footer-->
+</body>
+</html>
